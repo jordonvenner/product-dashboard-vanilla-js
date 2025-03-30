@@ -20,3 +20,20 @@ function fetchProductsThen() {
       handleError(error);
     }
   }
+
+
+  //task 4
+
+  function displayProducts(products) {
+    const container = document.querySelector('#product-container');
+    
+    products.slice(0, 5).forEach((product) => {
+      const productElement = document.createElement('div');
+      productElement.innerHTML = `
+        <h3>${product.fields.name}</h3>
+        <p>${product.fields.price}</p>
+        <img src="${product.fields.image[0].url}" alt="${product.fields.name}">
+      `;
+      container.appendChild(productElement);
+    });
+  }
