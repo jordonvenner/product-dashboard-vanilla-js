@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  #product-container div {
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  
+  #product-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  #product-container h3 {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  #product-container p {
+    color: #333;
+    font-weight: bold;
+  }
