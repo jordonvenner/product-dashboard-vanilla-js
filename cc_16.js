@@ -37,3 +37,9 @@ function fetchProductsThen() {
       container.appendChild(productElement);
     });
   }
+
+
+  //task 5
+  function handleError(error) {
+    console.log('An error occurred: ', error.message);
+  }
